@@ -31,6 +31,7 @@ body {
   align-items: flex-end;
   justify-content: end;
   margin-bottom: 32px;
+  overflow: scroll;
 }
 .calculation {
   position: absolute;
@@ -51,6 +52,7 @@ body {
 .key-span {
   grid-column: span 2;
 }
+button,
 .key-num {
   height: 64px;
   border-radius: 16px;
@@ -60,8 +62,8 @@ body {
   color: #f8fafc;
   border: none;
   transition: background-color 120ms ease;
-transition: transform 80ms ease;
-transition: box-shadow 120ms ease;
+  transition: transform 80ms ease;
+  transition: box-shadow 120ms ease;
 }
 .key-op {
   font-size: 24px;
@@ -115,4 +117,3 @@ transition: box-shadow 120ms ease;
   transform: scale(0.96);
   border: 1px rgba(255, 255, 255, 0.04);
 }
-
