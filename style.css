@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111827;
+  padding: 25px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  width: 360px;
+  background-color: #1e293b;
+  padding: 24px;
+  border-radius: 28px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
+}
+.display {
+  min-height: 110px;
+  padding: 24px 20px;
+  padding-bottom: 6px;
+  border-radius: 18px;
+  background: #0f172a;
+  color: white;
+  text-align: right;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  margin-bottom: 32px;
+}
+.calculation {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+}
+.calculation-input {
+  font-size: 48px;
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.key-span {
+  grid-column: span 2;
+}
+.key-num {
+  height: 64px;
+  border-radius: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  background: #334155;
+  color: #f8fafc;
+  border: none;
+  transition: background-color 120ms ease;
+transition: transform 80ms ease;
+transition: box-shadow 120ms ease;
+}
+.key-op {
+  font-size: 24px;
+  font-weight: 600;
+  background: #f59e0b;
+  color: #ffffff;
+}
+.key-eq {
+  font-size: 26px;
+  font-weight: 700;
+  background: #6366f1;
+  color: #ffffff;
+}
+.key-back {
+  background: #1a2030;
+}
+.key-clear {
+  font-size: 18px;
+  color: #f87171;
+  background: #1a2030;
+}
+.key-num:hover {
+  background: #475569;
+}
+.key-num:active {
+  background: #64748b;
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) inset;
+}
+.key-op:hover {
+  background: #fbbf24;
+}
+.key-op:active {
+  background: #d97706;
+  transform: scale(0.96);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25) inset;
+}
+.key-eq:hover {
+  background: #818cf8;
+}
+.key-eq:active {
+  background: #4f46e5;
+  transform: scale(0.96);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35) inset;
+}
+.key-fn:hover {
+  background: #475569;
+}
+.key-fn:active {
+  background: #334155;
+  transform: scale(0.96);
+  border: 1px rgba(255, 255, 255, 0.04);
+}
+
